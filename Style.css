@@ -19,7 +19,7 @@ body {
         linear-gradient(to Right, #b8f5b1, #abe7ff);
     background-attachment: fixed;
     font-family: 'MyCustomFont', sans-serif;
-    cursor: url(Bone.png), pointer;
+    cursor: url(Images/Bone.png), pointer;
 }
 
 @font-face {
@@ -203,6 +203,8 @@ section {
     linear-gradient(to Bottom, rgb(44, 85, 160), rgb(5, 29, 56));
 }
 
+.astro-name { color: rgb(85, 187, 255); }
+
 .shelly-card{
     background:linear-gradient(#ffffff, #414141);
     color:white;
@@ -224,6 +226,56 @@ section {
     ),
     linear-gradient(to Bottom, rgb(172, 147, 94), rgb(83, 71, 49));
 }
+
+.shelly-name { color: rgb(240, 220, 153); }
+
+.vee-card {
+    background:linear-gradient(#ffffff, #414141);
+    color:white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1500px;
+    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    font-size:30px;
+    background: 
+    /* Top Layer: Transparent & Semi-opaque Gray Stripes */
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 20px,
+      rgba(0, 0, 0, 0.1) 20px,
+      rgba(0, 0, 0, 0.1) 40px
+    ),
+    linear-gradient(to Bottom, rgb(59, 161, 50), rgb(32, 68, 32));
+}
+
+.vee-name { color: rgb(0, 231, 0); }
+
+.sprout-card {
+    background:linear-gradient(#ffffff, #414141);
+    color:white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1500px;
+    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    font-size:30px;
+    background: 
+    /* Top Layer: Transparent & Semi-opaque Gray Stripes */
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 20px,
+      rgba(0, 0, 0, 0.1) 20px,
+      rgba(0, 0, 0, 0.1) 40px
+    ),
+    linear-gradient(to Bottom, rgb(161, 50, 50), rgb(68, 32, 32));
+}
+
+.sprout-name { color:rgb(182, 0, 0) }
 
 .application-card{
     background:linear-gradient(#ffffff, #414141);
@@ -301,7 +353,6 @@ img { margin-top: 10px; }
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    margin-bottom: -50px;
 }
 
 .outlined-rainbow{
@@ -315,11 +366,6 @@ img { margin-top: 10px; }
     -webkit-text-stroke-width:1.25px;
     -webkit-text-stroke-color:rgb(0, 0, 0);
 }
-
-.astro-name { color: rgb(85, 187, 255); }
-.shelly-name { color: rgb(240, 220, 153); }
-.vee-name { color: rgb(0, 231, 0); }
-.sprout-name { color: red; }
 
 .alinhado{
     display:flex;
