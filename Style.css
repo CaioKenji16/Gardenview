@@ -16,10 +16,10 @@ body {
             transparent 75%,
             rgba(255,255,255,0.4) 75%
         ) 45px 45px / 90px 90px,
-
-        linear-gradient(to Right, #b8f5b1, #b7ecff);
+        linear-gradient(to Right, #b8f5b1, #abe7ff);
     background-attachment: fixed;
     font-family: 'MyCustomFont', sans-serif;
+    cursor: url(Bone.png), pointer;
 }
 
 @font-face {
@@ -181,6 +181,50 @@ section {
     linear-gradient(to Right, rgb(204, 103, 103), rgb(189, 139, 82), #bbb262, rgb(85, 180, 85), #5698be, rgb(79, 105, 190), rgb(151, 80, 179));
 }
 
+.astro-card{
+    background:linear-gradient(#ffffff, #414141);
+    color:white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1500px;
+    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    font-size:30px;
+    background: 
+    /* Top Layer: Transparent & Semi-opaque Gray Stripes */
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 20px,
+      rgba(0, 0, 0, 0.1) 20px,
+      rgba(0, 0, 0, 0.1) 40px
+    ),
+    linear-gradient(to Bottom, rgb(44, 85, 160), rgb(5, 29, 56));
+}
+
+.shelly-card{
+    background:linear-gradient(#ffffff, #414141);
+    color:white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1500px;
+    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    font-size:30px;
+    background: 
+    /* Top Layer: Transparent & Semi-opaque Gray Stripes */
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 20px,
+      rgba(0, 0, 0, 0.1) 20px,
+      rgba(0, 0, 0, 0.1) 40px
+    ),
+    linear-gradient(to Bottom, rgb(172, 147, 94), rgb(83, 71, 49));
+}
+
 .application-card{
     background:linear-gradient(#ffffff, #414141);
     color:white;
@@ -272,7 +316,13 @@ img { margin-top: 10px; }
     -webkit-text-stroke-color:rgb(0, 0, 0);
 }
 
-.astro-name { color: blue; }
-.shelly-name { color: rgb(255, 196, 0); }
+.astro-name { color: rgb(85, 187, 255); }
+.shelly-name { color: rgb(240, 220, 153); }
 .vee-name { color: rgb(0, 231, 0); }
 .sprout-name { color: red; }
+
+.alinhado{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
