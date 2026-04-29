@@ -83,7 +83,15 @@ section {
 }
 
 .card {
-    background:linear-gradient(#585858, #414141);
+    background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 20px,
+      rgba(255, 255, 255, 0.1) 20px,
+      rgba(255, 255, 255, 0.1) 40px
+    ),
+    linear-gradient(to Bottom, #858585, #383838);
     color:white;
     border-radius: 30px;
     padding: 20px;
@@ -92,8 +100,11 @@ section {
     -webkit-text-stroke-width: 1.25px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
     font-size:30px;
+    border: 5px solid rgb(41, 41, 41);
+}
+
+.top-card {
     background:
-    /* Top Layer: Transparent & Semi-opaque Gray Stripes */
     repeating-linear-gradient(
       45deg,
       transparent,
@@ -101,44 +112,19 @@ section {
       rgba(255, 255, 255, 0.1) 20px,
       rgba(255, 255, 255, 0.1) 40px
     ),
-    /* Bottom Layer: Main Color Gradient */
     linear-gradient(to Bottom, #858585, #383838);
-    border: 5px solid gradient(to Bottom, #474747, #1b1b1b);
-}
-
-.top-card {
-    background:linear-gradient(#ffffff, #414141);
     color:white;
-    border-radius: 15px;
+    border-radius: 30px;
     padding: 20px;
     margin: 20px auto;
     max-width: 1500px;
     -webkit-text-stroke-width: 1.25px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
     font-size:30px;
-    background: 
-    /* Top Layer: Transparent & Semi-opaque Gray Stripes */
-    repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 20px,
-      rgba(255, 255, 255, 0.1) 20px,
-      rgba(255, 255, 255, 0.1) 40px
-    ),
-    /* Bottom Layer: Main Color Gradient */
-    linear-gradient(to Bottom, #858585, #383838);
     margin-top: 235px;
 }
 
 .dandy-card {
-    color:white;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1500px;
-    -webkit-text-stroke-width: 1.25px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
-    font-size:30px;
     background:
     repeating-linear-gradient(
       45deg,
@@ -149,6 +135,14 @@ section {
     ),
     linear-gradient(to Bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)),
     linear-gradient(to Right, rgb(255, 118, 118), rgb(255, 189, 113), #fff174, rgb(124, 255, 124), #73ccff, #7293ff, rgb(189, 119, 255));
+    color:white;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1500px;
+    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    font-size:30px;
     margin-top: 235px;
     position: relative;
     z-index: 10;
@@ -166,7 +160,7 @@ section {
     linear-gradient(to Bottom, rgba(25, 26, 88, 1), rgba(25, 26, 88, 0)),
     linear-gradient(to Right, rgb(204, 103, 103), rgb(189, 139, 82), #bbb262, rgb(85, 180, 85), #5698be, rgb(79, 105, 190), rgb(151, 80, 179));
     color:white;
-    border-radius: 15px;
+    border-radius: 30px;
     padding: 20px;
     margin: 20px auto;
     max-width: 1500px;
@@ -190,7 +184,7 @@ section {
     ),
     linear-gradient(to Bottom, rgba(25, 26, 88, 1), rgba(25, 26, 88, 0)),
     linear-gradient(to Right, rgb(204, 103, 103), rgb(189, 139, 82), #bbb262, rgb(85, 180, 85), #5698be, rgb(79, 105, 190), rgb(151, 80, 179));
-    border-radius: 15px;
+    border-radius: 30px;
     display:none;
     position: absolute;
     top: 10px;
@@ -209,7 +203,7 @@ section {
     ),
     linear-gradient(to Bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)),
     linear-gradient(to Right, rgb(255, 118, 118), rgb(255, 189, 113), #fff174, rgb(124, 255, 124), #73ccff, #7293ff, rgb(189, 119, 255));
-    border-radius: 15px;
+    border-radius: 30px;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -217,17 +211,7 @@ section {
 }
 
 .astro-card{
-    background:linear-gradient(#ffffff, #414141);
-    color:white;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1500px;
-    -webkit-text-stroke-width: 1.25px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
-    font-size:30px;
-    background: 
-    /* Top Layer: Transparent & Semi-opaque Gray Stripes */
+    background:
     repeating-linear-gradient(
       45deg,
       transparent,
@@ -236,22 +220,20 @@ section {
       rgba(0, 0, 0, 0.1) 40px
     ),
     linear-gradient(to Bottom, rgb(44, 85, 160), rgb(5, 29, 56));
-}
-
-.astro-name { color: rgb(85, 187, 255); }
-
-.shelly-card{
-    background:linear-gradient(#ffffff, #414141);
     color:white;
-    border-radius: 15px;
+    border-radius: 30px;
     padding: 20px;
     margin: 20px auto;
     max-width: 1500px;
     -webkit-text-stroke-width: 1.25px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
     font-size:30px;
-    background: 
-    /* Top Layer: Transparent & Semi-opaque Gray Stripes */
+}
+
+.astro-name { color: rgb(85, 187, 255); }
+
+.shelly-card{
+    background:
     repeating-linear-gradient(
       45deg,
       transparent,
@@ -260,22 +242,20 @@ section {
       rgba(0, 0, 0, 0.1) 40px
     ),
     linear-gradient(to Bottom, rgb(172, 147, 94), rgb(83, 71, 49));
-}
-
-.shelly-name { color: rgb(240, 220, 153); }
-
-.vee-card {
-    background:linear-gradient(#ffffff, #414141);
     color:white;
-    border-radius: 15px;
+    border-radius: 30px;
     padding: 20px;
     margin: 20px auto;
     max-width: 1500px;
     -webkit-text-stroke-width: 1.25px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
     font-size:30px;
+}
+
+.shelly-name { color: rgb(240, 220, 153); }
+
+.vee-card {
     background: 
-    /* Top Layer: Transparent & Semi-opaque Gray Stripes */
     repeating-linear-gradient(
       45deg,
       transparent,
@@ -284,22 +264,20 @@ section {
       rgba(0, 0, 0, 0.1) 40px
     ),
     linear-gradient(to Bottom, rgb(59, 161, 50), rgb(32, 68, 32));
-}
-
-.vee-name { color: rgb(0, 231, 0); }
-
-.sprout-card {
-    background:linear-gradient(#ffffff, #414141);
     color:white;
-    border-radius: 15px;
+    border-radius: 30px;
     padding: 20px;
     margin: 20px auto;
     max-width: 1500px;
     -webkit-text-stroke-width: 1.25px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
     font-size:30px;
-    background: 
-    /* Top Layer: Transparent & Semi-opaque Gray Stripes */
+}
+
+.vee-name { color: rgb(0, 231, 0); }
+
+.sprout-card {
+    background:
     repeating-linear-gradient(
       45deg,
       transparent,
@@ -308,20 +286,20 @@ section {
       rgba(0, 0, 0, 0.1) 40px
     ),
     linear-gradient(to Bottom, rgb(161, 50, 50), rgb(68, 32, 32));
+    color:white;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1500px;
+    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    font-size:30px;
 }
 
 .sprout-name { color:rgb(182, 0, 0) }
 
 .application-card{
-    background:linear-gradient(#ffffff, #414141);
-    color:white;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1500px;
-    font-size:30px;
-    background: 
-    /* Top Layer: Transparent & Semi-opaque Gray Stripes */
+    background:
     repeating-linear-gradient(
       45deg,
       transparent,
@@ -329,8 +307,13 @@ section {
       rgba(255, 255, 255, 0.1) 20px,
       rgba(255, 255, 255, 0.1) 40px
     ),
-    /* Bottom Layer: Main Color Gradient */
     linear-gradient(to Bottom, #858585, #383838);
+    color:white;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1500px;
+    font-size:30px;
     margin-top: 235px;
 }
 
@@ -360,7 +343,7 @@ section {
     padding: 20px;
     margin: 20px auto;
     max-width: 700px;
-    border-radius: 15px;
+    border-radius: 30px;
     text-align: center;
     font-size: 1.5em;
     cursor: pointer;
