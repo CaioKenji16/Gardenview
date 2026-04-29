@@ -23,6 +23,9 @@
 <section id="homePage" class="page">
 
 <div class="top-card">
+    <div class="centralizado">
+        <img src="Images/Game_Logo.webp" width="300px">
+    </div>
 <h1 class="rainbow-text">Welcome to the unofficial Gardenview website!</h1>
 <p>Gardenview Educational Center and Museum is a place where learning meets imagination. Explore interactive exhibits, meet our beloved Toons, and discover a world of creativity, science, and fun for all ages!</p>
 </div>
@@ -72,13 +75,24 @@ Work with us!
 <!-- TOONS -->
 <section id="toonsPage" class="page">
 
-<div class="dandy-card">
+<div class="dandy-card" id="dandyCard">
     <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/0/07/Dandy_Full_Artwork.png/revision/latest?cb=20250816222419" width="200px">
+    <button onclick="revealDyle()" class="timesUp" id="dyleButton"><img src="Images/TIMES_UP_Icon.webp" width="100px"></button>
     <div class="alinhado">
         <img src="Images/Dandy_Logo.webp" width="50px" height="50px">
         <h2><span class="rainbow-text">Dandicus Dancifer</span></h2>
     </div>
 <p>The star of the show! Dandy is one lovely Toon who always enjoys hours of endless fun!</p>
+</div>
+
+<div class="dyle-card" id="dyleCard">
+    <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/5/5c/Dyle_Emoji.png/revision/latest?cb=20250921203451" width="150px">
+    <button onclick="hideDyle()" class="timesOver"><img src="Images/Dandy_Logo.webp" width="100px"></button>
+    <div class="alinhado">
+        <img src="https://static.wikitide.net/dandysworldwiki/a/a4/Train_Whistle.webp" width="50px" height="50px">
+        <h2 class="rainbow-text">Dyle Timesly</h2>
+    </div>
+<p>The operator assistant of Dandy's World. Dyle's responsible for conducting the trains that lead in and out of Gardenview!</p>
 </div>
 
 <div class="astro-card">
@@ -126,15 +140,6 @@ Work with us!
     <p>Shelly is one exciting Toon! She could tell you facts about dinosaurs and fossils for hours!</p>
 </div>
 
-<div class="dyle-card">
-    <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/5/5c/Dyle_Emoji.png/revision/latest?cb=20250921203451" width="150px">
-    <div class="alinhado">
-        <img src="https://static.wikitide.net/dandysworldwiki/a/a4/Train_Whistle.webp" width="50px" height="50px">
-        <h2 class="rainbow-text">Dyle Timesly</h2>
-    </div>
-<p>The operator assistant of Dandy's World. Dyle's responsible for conducting the trains that lead in and out of Gardenview!</p>
-</div>
-
 </section>
 
 <!-- JOBS -->
@@ -148,17 +153,24 @@ Work with us!
 
 <!-- APPLY -->
 <section id="applyPage" class="page">
-<div class="application-card">
+<div class="top-card">
+
 <h2 class="outlined-rainbow">Application Form</h2>
-<p class="application-text">Full name:</p>
-<input class="application-question" placeholder="Full Name">
-<p class="application-text">Your email:</p>
-<input class="application-question" placeholder="Email">
-<p class="application-text">Your resume:</p>
-<textarea class="application-question" placeholder="Paste your resume..."></textarea>
-<p class="application-text">Any observations?</p>
-<textarea class="application-question" placeholder="Observations"></textarea>
-<button onclick="submitApplication()">Submit</button>
+
+<p>Full name:</p>
+<input id="name" class="application-question" placeholder="Full Name">
+
+<p>Your email:</p>
+<input id="email" class="application-question" placeholder="Email">
+
+<p>Your resume:</p>
+<textarea id="resume" class="application-question" placeholder="Paste your resume..."></textarea>
+
+<p>Any observations?</p>
+<textarea id="obs" class="application-question" placeholder="Observations"></textarea>
+
+<button onclick="submitApplication()" class="application-question">Submit</button>
+
 </div>
 </section>
 

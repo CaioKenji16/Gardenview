@@ -22,6 +22,10 @@ body {
     cursor: url(Images/Bone.png), pointer;
 }
 
+h1, h2, h3, p {
+    margin: 5px 0;
+}
+
 @font-face {
   font-family: 'MyCustomFont';
   src: url('ITC Kabel Bold.otf') format('otf'),
@@ -54,6 +58,7 @@ header {
     font-size: 2em;
     position: fixed;
     min-width: 100%;
+    z-index: 20;
 }
 
 nav {
@@ -62,13 +67,15 @@ nav {
     text-align: center;
     position: fixed;
     min-width: 100%;
-    top:200px;
+    top:196px;
+    z-index: 20;
 }
 
 nav a {
     margin: 0 15px;
     cursor: pointer;
     font-weight: bold;
+    z-index: 20;
 }
 
 section {
@@ -99,15 +106,6 @@ section {
     border: 5px solid gradient(to Bottom, #474747, #1b1b1b);
 }
 
-.card-outline {
-    background:linear-gradient(#ffffff, #414141);
-
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 10px
-}
-
 .top-card {
     background:linear-gradient(#ffffff, #414141);
     color:white;
@@ -129,11 +127,10 @@ section {
     ),
     /* Bottom Layer: Main Color Gradient */
     linear-gradient(to Bottom, #858585, #383838);
-    margin-top: 250px;
+    margin-top: 235px;
 }
 
 .dandy-card {
-    background:linear-gradient(#ffffff, #414141);
     color:white;
     border-radius: 15px;
     padding: 20px;
@@ -142,8 +139,7 @@ section {
     -webkit-text-stroke-width: 1.25px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
     font-size:30px;
-    background: 
-    /* Top Layer: Transparent & Semi-opaque Gray Stripes */
+    background:
     repeating-linear-gradient(
       45deg,
       transparent,
@@ -152,23 +148,14 @@ section {
       rgba(0, 0, 0, 0.1) 40px
     ),
     linear-gradient(to Bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)),
-    /* Bottom Layer: Main Color Gradient */
     linear-gradient(to Right, rgb(255, 118, 118), rgb(255, 189, 113), #fff174, rgb(124, 255, 124), #73ccff, #7293ff, rgb(189, 119, 255));
-    margin-top: 250px;
+    margin-top: 235px;
+    position: relative;
+    z-index: 10;
 }
 
 .dyle-card{
-    background:linear-gradient(#ffffff, #414141);
-    color:white;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1500px;
-    -webkit-text-stroke-width: 1.25px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
-    font-size:30px;
-    background: 
-    /* Top Layer: Transparent & Semi-opaque Gray Stripes */
+    background:
     repeating-linear-gradient(
       45deg,
       transparent,
@@ -177,8 +164,56 @@ section {
       rgba(0, 0, 0, 0.1) 40px
     ),
     linear-gradient(to Bottom, rgba(25, 26, 88, 1), rgba(25, 26, 88, 0)),
-    /* Bottom Layer: Main Color Gradient */
     linear-gradient(to Right, rgb(204, 103, 103), rgb(189, 139, 82), #bbb262, rgb(85, 180, 85), #5698be, rgb(79, 105, 190), rgb(151, 80, 179));
+    color:white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1500px;
+    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    font-size:30px;
+    margin-top: 235px;
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+
+.timesUp {
+    background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 20px,
+      rgba(0, 0, 0, 0.1) 20px,
+      rgba(0, 0, 0, 0.1) 40px
+    ),
+    linear-gradient(to Bottom, rgba(25, 26, 88, 1), rgba(25, 26, 88, 0)),
+    linear-gradient(to Right, rgb(204, 103, 103), rgb(189, 139, 82), #bbb262, rgb(85, 180, 85), #5698be, rgb(79, 105, 190), rgb(151, 80, 179));
+    border-radius: 15px;
+    display:none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 15;
+}
+
+.timesOver {
+    background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 20px,
+      rgba(0, 0, 0, 0.1) 20px,
+      rgba(0, 0, 0, 0.1) 40px
+    ),
+    linear-gradient(to Bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)),
+    linear-gradient(to Right, rgb(255, 118, 118), rgb(255, 189, 113), #fff174, rgb(124, 255, 124), #73ccff, #7293ff, rgb(189, 119, 255));
+    border-radius: 15px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 15;
 }
 
 .astro-card{
@@ -296,7 +331,7 @@ section {
     ),
     /* Bottom Layer: Main Color Gradient */
     linear-gradient(to Bottom, #858585, #383838);
-    margin-top: 250px;
+    margin-top: 235px;
 }
 
 .application-text{
@@ -317,7 +352,7 @@ section {
     padding: 20px;
     margin: 20px auto;
     max-width: 1500px;
-    width:1450px;
+    font-size:30px;
 }
 
 .banner {
@@ -371,4 +406,11 @@ img { margin-top: 10px; }
     display:flex;
     flex-direction:row;
     align-items:center;
+}
+
+.centralizado {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
