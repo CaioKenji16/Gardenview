@@ -35,6 +35,8 @@ function revealTimesUp() {
 function revealDyle() {
     document.getElementById("dyleCard").style.display = "block";
     document.getElementById("dandyCard").style.display = "none";
+    const audio = document.getElementById("trainWhistle");
+    audio.play();
 }
 
 function hideDyle() {
