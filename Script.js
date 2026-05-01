@@ -42,4 +42,73 @@ function revealDyle() {
 function hideDyle() {
     document.getElementById("dyleCard").style.display = "none";
     document.getElementById("dandyCard").style.display = "block";
+    const audio = document.getElementById("clairDeLune");
+    audio.play();
 }
+
+const valve = document.getElementById("valve");
+
+let isDragging = false;
+let lastAngle = 0;
+let currentRotation = 0;
+
+valve.addEventListener("mousedown", (e) => {
+    e.preventDefault(); // 👈 MUITO importante
+    isDragging = true;
+    valve.style.cursor = "grabbing";
+
+    const rect = valve.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+
+    lastAngle = Math.atan2(
+        e.clientY - centerY,
+        e.clientX - centerX
+    );
+});
+
+document.addEventListener("mouseup", () => {
+    isDragging = false;
+    valve.style.cursor = "grab";
+});
+
+// 🔥 segurança extra (resolve 99% dos bugs)
+window.addEventListener("blur", () => {
+    isDragging = false;
+});
+
+document.addEventListener("mouseleave", () => {
+    isDragging = false;
+});
+
+document.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
+
+    const rect = valve.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+
+    const angle = Math.atan2(
+        e.clientY - centerY,
+        e.clientX - centerX
+    );
+
+    let delta = angle - lastAngle;
+
+    if (delta > Math.PI) delta -= 2 * Math.PI;
+    if (delta < -Math.PI) delta += 2 * Math.PI;
+
+    currentRotation += delta * (180 / Math.PI);
+
+    valve.style.transform = `rotate(${currentRotation}deg)`;
+
+    lastAngle = angle;
+});
+
+valve.addEventListener("dragstart", (e) => {
+    e.preventDefault();
+});
+
+document.addEventListener("pointerup", () => {
+    isDragging = false;
+});

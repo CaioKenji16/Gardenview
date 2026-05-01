@@ -419,3 +419,12 @@ section {
     border-radius: 30px;
     border: 3px solid rgb(0, 0, 0);
 }
+
+#valve {
+    width: 120px;
+    cursor: grab;
+    transform-origin: center center;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: auto;
+}
