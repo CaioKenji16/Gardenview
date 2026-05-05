@@ -1,185 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Gardenview Educational Center</title>
-<link rel="stylesheet" href="Style.css">
-<link rel="icon" href="Images/Dandy_Logo.webp" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Gardenview Educational Center</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="Images/Dandy_Logo.webp" type="image/x-icon">
 </head>
 
 <body>
 
-<header>
-<img src="Images/Gardenview_Sign.webp" style="max-width:200px; width:100%; height:auto;">
-</header>
+    <header>
+        <img src="Images/Gardenview_Sign.webp" style="max-width:200px; width:100%; height:auto;">
+    </header>
 
-<nav>
-<a onclick="showPage('homePage')">Home</a>
-<a onclick="showPage('toonsPage')">Meet the Toons</a>
-<a onclick="showPage('jobsPage')">Careers</a>
-</nav>
+    <nav>
+        <a onclick="showPage('homePage')" id="home">Home</a>
+        <a onclick="showPage('toonsPage')" id="toons">Meet the Toons</a>
+        <a onclick="showPage('merchPage')" id="merch">Merch</a>
+        <a onclick="showPage('jobsPage')" id="careers">Jobs</a>
+    </nav>
 
-<!-- HOME -->
-<section id="homePage" class="page">
+    <!-- HOME -->
+    <section id="homePage" class="page">
 
-<div class="top-card">
-    <div class="centralizado">
-        <img src="Images/Game_Logo.webp" width="300px">
-<h1 class="rainbow-text">Welcome to the unofficial Gardenview website!</h1>
-    <p>Gardenview Educational Center and Museum is a place where learning meets imagination. Explore interactive exhibits, meet our beloved Toons, and discover a world of creativity, science, and fun for all ages!</p>
-    <img src="Images/BlushCrunch.png" width="100px" height="100px" class="arredondado">
-    <h2 class="pink-text">Disclaimer!</h2>
-    <p>Dandy's World and all affiliated content belongs to BlushCrunch Studios and all credits are due to the respective owners.</p>
-</div>
-</div>
-</div>
+        <!-- ANÚNCIOS -->
+        <!--div class="side-container left-ad" id="adLeft">
+            <a onclick="showPage('merchPage')" class="ad"><img src="Images/Dandy_Plush_Merch.png" width="325px">
+                <h2 class="rainbow-text">Ever wanted your very own Dandy plush?</h2>
+                <p>Get one for just $32!</p>
+            </a>
+            <a onclick="showPage('merchPage')" class="ad"><img src="Images/Dandy_and_Mains_Shirt.webp" width="325px">
+                <h2 class="rainbow-text">Spice up your looks!</h2>
+                <p>With official Gardenview merch!</p>
+            </a>
+            <a onclick="showPage('merchPage')" class="ad"><img src="Images/Plant_Kindness_Poster.png" width="325px">
+                <h2 class="rainbow-text">Exclusive posters!</h2>
+                <p>Only in Dandy's World's official merch store!</p>
+            </a>
+            <a onclick="showPage('merchPage')" class="ad"><img src="Images/Dandy_Acrylic_Standee.png" width="325px">
+                <h2 class="rainbow-text">Dandy's World statues!</h2>
+                <p>Your favorite characters, now in high-quality acrylic standees!</p>
+            </a>
+        </div-->
+        <!-- FIM DOS ANÚNCIOS -->
+         <div class="side-container left-ad">
+         <a onclick="showPage('merchPage')" class="ad"><img src="Images/Dandy_Plush_Merch.png" width="325">
+            <h2 class="rainbow-text">Ever wanted your very own Dandy plush?</h2>
+            <p>Get one for just $32!</p>
+        </a>
+        </div>
 
-<img src="Images/Valve.png" id="valve">
+        <div class="top-card">
+            <div class="centralizado">
+                <img src="Images/Game_Logo.webp" width="500px">
+                <h2 class="rainbow-text">Welcome to the unofficial Gardenview website!</h2>
+                <p>Gardenview Educational Center and Museum is a place where learning meets imagination. Explore
+                    interactive exhibits, meet our beloved Toons, and discover a world of creativity, science,
+                    and fun for all ages!</p>
+                <img src="Images/BlushCrunch.png" width="100px" height="100px" class="arredondado">
+                <h2 class="pink-text">Disclaimer!</h2>
+                <p>Dandy's World and all affiliated content belongs to BlushCrunch Studios and all credits are
+                    due to the respective owners.</p>
+            </div>
+        </div>
+        </div>
 
-<div class="banner" onclick="showPage('toonsPage')">
-Meet the Toons!
-</div>
+        <img src="Images/Valve.png" id="valve">
 
-<div class="banner" onclick="showPage('applyPage')">
-Work with us!
-</div>
+        <div class="card">
+            <h2 class="rainbow-text">Our Founders</h2>
+            <p>Gardenview was brought to life by two brilliant minds who believed in the power of imagination and joy.
+            </p>
 
-<div class="card">
-<h2 class="rainbow-text">Our Founders</h2>
-<p>Gardenview was brought to life by two brilliant minds who believed in the power of imagination and joy.</p>
+            <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
 
-<div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
+                <div style="text-align:center;">
+                    <img src="Images/Delilah_Keen.webp" width="200" class="arredondado">
+                    <p><b class="rainbow-text">Delilah Keen</b><br>A visionary creator who helped bring happiness to
+                        children everywhere, giving life to their beloved Toon friends!</p>
+                </div>
 
-<div style="text-align:center;">
-<img src="Images/Delilah_Keen.webp" width="200" class="arredondado">
-<p><b class="rainbow-text">Delilah Keen</b><br>A visionary creator who helped bring happiness to children everywhere, giving life to their beloved Toon friends!</p>
-</div>
+                <div style="text-align:center;">
+                    <img src="Images/Arthur_Walton.webp" width="200" class="arredondado">
+                    <p><b class="rainbow-text">Arthur Walton</b><br>A brilliant innovator who turned dreams into
+                        reality, helping create the magical world of Gardenview and its wonderful Toons!</p>
+                </div>
+            </div>
+        </div>
 
-<div style="text-align:center;">
-<img src="Images/Arthur_Walton.webp" width="200" class="arredondado">
-<p><b class="rainbow-text">Arthur Walton</b><br>A brilliant innovator who turned dreams into reality, helping create the magical world of Gardenview and its wonderful Toons!</p>
-</div>
-</div>
-</div>
+        <div class="card">
+            <h2 class="rainbow-text">Gardenview's Rules</h2>
+            <p class="warning">- Don't throw things at Toons;</p>
+            <p class="warning">- No photography around Astro;</p>
+            <p class="warning">- Listen to Toon Handlers;</p>
+            <p class="warning">- Don't run;</p>
+            <p class="warning">- Don't scream;</p>
+            <p class="warning">- Don't pull on Toons;</p>
+            <p class="warning">- Don't yell at Toons;</p>
+            <p class="warning">- No water around Vee.</p>
+        </div>
 
-<div class="card">
-<h2 class="rainbow-text">Gardenview's Rules</h2>
-<p class="warning">- Don't throw things at Toons;</p>
-<p class="warning">- No photography around Astro;</p>
-<p class="warning">- Listen to Toon Handlers;</p>
-<p class="warning">- Don't run;</p>
-<p class="warning">- Don't scream;</p>
-<p class="warning">- Don't pull on Toons;</p>
-<p class="warning">- Don't yell at Toons;</p>
-<p class="warning">- No water around Vee.</p>
-</div>
+    </section>
 
-</section>
+    <!-- TOONS -->
+    <section id="toonsPage" class="page">
 
-<!-- TOONS -->
-<section id="toonsPage" class="page">
+        <audio id="trainWhistle" src="Audios/Train_Whistle.mp3"></audio>
+        <div class="dandy-card" id="dandyCard">
+            <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/0/07/Dandy_Full_Artwork.png/revision/latest?cb=20250816222419"
+                width="200px">
+            <button onclick="revealDyle()" class="timesUp" id="dyleButton"><img src="Images/TIMES_UP_Icon.webp"
+                    width="100px"></button>
+            <div class="alinhado">
+                <img src="Images/Dandy_Logo.webp" width="50px" height="50px">
+                <h2><span class="rainbow-text">Dandicus Dancifer</span></h2>
+            </div>
+            <p>The star of the show! Dandy is one lovely Toon who always enjoys hours of endless fun!</p>
+        </div>
 
-    <audio id="trainWhistle" src="Audios/Train_Whistle.mp3"></audio>
-<div class="dandy-card" id="dandyCard">
-    <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/0/07/Dandy_Full_Artwork.png/revision/latest?cb=20250816222419" width="200px">
-    <button onclick="revealDyle()" class="timesUp" id="dyleButton"><img src="Images/TIMES_UP_Icon.webp" width="100px"></button>
-    <div class="alinhado">
-        <img src="Images/Dandy_Logo.webp" width="50px" height="50px">
-        <h2><span class="rainbow-text">Dandicus Dancifer</span></h2>
-    </div>
-<p>The star of the show! Dandy is one lovely Toon who always enjoys hours of endless fun!</p>
-</div>
+        <audio id="clairDeLune" src="Audios/Clair_de_Lune.mp3"></audio>
+        <div class="dyle-card" id="dyleCard">
+            <img src="Images/Timesly.png" width="150px">
+            <button onclick="hideDyle()" class="timesOver"><img src="Images/Dandy_Logo.webp" width="100px"></button>
+            <div class="alinhado">
+                <img src="https://static.wikitide.net/dandysworldwiki/a/a4/Train_Whistle.webp" width="50px"
+                    height="50px">
+                <h2 class="rainbow-text">Dyle Timesly</h2>
+            </div>
+            <p>The operator assistant of Dandy's World. Dyle's responsible for conducting the trains that lead in
+                and out of Gardenview!</p>
+        </div>
 
-<audio id="clairDeLune" src="Audios/Clair_de_Lune.mp3"></audio>
-<div class="dyle-card" id="dyleCard">
-    <img src="Images/Timesly.png" width="150px">
-    <button onclick="hideDyle()" class="timesOver"><img src="Images/Dandy_Logo.webp" width="100px"></button>
-    <div class="alinhado">
-        <img src="https://static.wikitide.net/dandysworldwiki/a/a4/Train_Whistle.webp" width="50px" height="50px">
-        <h2 class="rainbow-text">Dyle Timesly</h2>
-    </div>
-<p>The operator assistant of Dandy's World. Dyle's responsible for conducting the trains that lead in and out of Gardenview!</p>
-</div>
+        <div class="astro-card">
+            <img src="https://static.wikia.nocookie.net/p__/images/5/59/Astro_Novalite.png/revision/latest?cb=20250219014115&path-prefix=protagonist"
+                width="175px">
+            <div class="alinhado">
+                <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/b/b3/Astro_Logo.png/revision/latest?cb=20251201211506"
+                    width="50px" height="60px">
+                <h2 class="astro-name">Astro Novalite</h2>
+            </div>
+            <p>Dandy's best friend, Astro is one shy Toon! With the power to give people sweet dreams, Astro may not
+                be the most sociable, but get to know him and you'll make a friend for life.</p>
+        </div>
 
-<div class="astro-card">
-<img src="https://static.wikia.nocookie.net/p__/images/5/59/Astro_Novalite.png/revision/latest?cb=20250219014115&path-prefix=protagonist" width="175px">
-    <div class="alinhado">
-        <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/b/b3/Astro_Logo.png/revision/latest?cb=20251201211506" width="50px" height="60px">
-<h2 class="astro-name">Astro Novalite</h2>
-</div>
-<p>Dandy's best friend, Astro is one shy Toon! With the power to give people sweet dreams, Astro may not be the most sociable, but get to know him and you'll make a friend for life.</p>
-</div>
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/neutral-characters/images/0/07/Pebble.webp/revision/latest?cb=20251025170313"
+                width="150px">
+            <div class="alinhado">
+                <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/9/9d/Bone_Trinket.png/revision/latest?cb=20240803025701"
+                    width="50px" height="50px">
+                <h2>Pebble Dancifer Jr.</h2>
+            </div>
+            <p>Dandy's loyal pet rock, Pebble is the most adorable Toon! Playful and joyous, this cute little fella
+                will remain by your side no matter what.</p>
+        </div>
 
-<div class="card">
-    <img src="https://static.wikia.nocookie.net/neutral-characters/images/0/07/Pebble.webp/revision/latest?cb=20251025170313" width="150px">
-    <div class="alinhado">
-        <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/9/9d/Bone_Trinket.png/revision/latest?cb=20240803025701" width="50px" height="50px">
-        <h2>Pebble Dancifer Jr.</h2>
-    </div>
-<p>Dandy's loyal pet rock, Pebble is the most adorable Toon! Playful and joyous, this cute little fella will remain by your side no matter what.</p>
-</div>
+        <div class="sprout-card">
+            <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/5/5d/Sprout_Full_Icon.png/revision/latest/scale-to-width/360?cb=20240827004146"
+                width="150px">
+            <div class="alinhado">
+                <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/a/a2/Sprout_Logo.png/revision/latest?cb=20250214060112"
+                    width="37.5px" height="50px">
+                <h2 class="sprout-name">Sprout Seedly</h2>
+            </div>
+            <p>Sprout is one caring Toon! Often seen with his best friend Cosmo, Sprout always spreads kindness and
+                joy with his delicious delicacies.</p>
+        </div>
 
-<div class="sprout-card">
-    <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/5/5d/Sprout_Full_Icon.png/revision/latest/scale-to-width/360?cb=20240827004146" width="150px">
-    <div class="alinhado">
-        <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/a/a2/Sprout_Logo.png/revision/latest?cb=20250214060112" width="37.5px" height="50px">
-        <h2 class="sprout-name">Sprout Seedly</h2>
-    </div>
-<p>Sprout is one caring Toon! Often seen with his best friend Cosmo, Sprout always spreads kindness and joy with his delicious delicacies.</p>
-</div>
+        <div class="vee-card">
+            <img src="https://static.wikia.nocookie.net/p__/images/3/31/VeeFullIcon.png/revision/latest?cb=20260316145427&path-prefix=protagonist"
+                width="150px">
+            <div class="alinhado">
+                <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/1/16/Vee_Logo.png/revision/latest/scale-to-width-down/250?cb=20260123171248"
+                    width="50px" height="50px">
+                <h2 class="vee-name">Vee Version 1</h2>
+            </div>
+            <p>Vee is one smart Toon! She has her own gameshow where you can win lots of prizes!</p>
+        </div>
 
-<div class="vee-card">
-    <img src="https://static.wikia.nocookie.net/p__/images/3/31/VeeFullIcon.png/revision/latest?cb=20260316145427&path-prefix=protagonist" width="150px">
-    <div class="alinhado">
-        <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/1/16/Vee_Logo.png/revision/latest/scale-to-width-down/250?cb=20260123171248" width="50px" height="50px">
-<h2 class="vee-name">Vee Version 1</h2>
-</div>
-<p>Vee is one smart Toon! She has her own gameshow where you can win lots of prizes!</p>
-</div>
+        <div class="shelly-card">
+            <img src="https://static.wikia.nocookie.net/p__/images/b/b2/Shelly_Fossilian.png/revision/latest?cb=20260207034951&path-prefix=protagonist"
+                width="175px">
+            <div class="alinhado">
+                <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/5/51/Shelly_Logo.png/revision/latest?cb=20250803075054"
+                    width="60px" height="50px">
+                <h2 class="shelly-name">Shelly Fossilian</h2>
+            </div>
+            <p>Shelly is one exciting Toon! She could tell you facts about dinosaurs and fossils for hours!</p>
+        </div>
 
-<div class="shelly-card">
-    <img src="https://static.wikia.nocookie.net/p__/images/b/b2/Shelly_Fossilian.png/revision/latest?cb=20260207034951&path-prefix=protagonist" width="175px">
-    <div class="alinhado">
-        <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/5/51/Shelly_Logo.png/revision/latest?cb=20250803075054" width="60px" height="50px">
-        <h2 class="shelly-name">Shelly Fossilian</h2>
-    </div>
-    <p>Shelly is one exciting Toon! She could tell you facts about dinosaurs and fossils for hours!</p>
-</div>
+    </section>
 
-</section>
+    <!-- JOBS -->
+    <section id="jobsPage" class="page">
+        <div class="top-card">
+            <h3 class="rainbow-text">Work at Gardenview!</h3>
+            <p>Join our team and help create magical experiences in Gardenview Educational Center and Museum!</p>
+        </div>
+        <div class="card">
+            <h3 class="rainbow-text">Toon Handler</h3>
+            <p>Join our crew of amazing Toon Handlers and help care for our beloved stars, the Toons!</p>
+            <button onclick="showPage('applyPage')" class="applyButton">Apply Now</button>
+        </div>
+    </section>
 
-<!-- JOBS -->
-<section id="jobsPage" class="page">
-<div class="top-card">
-<h2>Work at Gardenview</h2>
-<p>Join our team and help create magical experiences.</p>
-<button onclick="showPage('applyPage')">Apply Now</button>
-</div>
-</section>
+    <!-- APPLY -->
+    <section id="applyPage" class="page">
+        <div class="top-card">
 
-<!-- APPLY -->
-<section id="applyPage" class="page">
-<div class="top-card">
+            <h2 class="outlined-rainbow">Application Form</h2>
 
-<h2 class="outlined-rainbow">Application Form</h2>
+            <p>Full name:</p>
+            <input id="name" class="application-question" placeholder="Full Name">
 
-<p>Full name:</p>
-<input id="name" class="application-question" placeholder="Full Name">
+            <p>Your email:</p>
+            <input id="email" class="application-question" placeholder="Email">
 
-<p>Your email:</p>
-<input id="email" class="application-question" placeholder="Email">
+            <p>Your resume:</p>
+            <input id="resume" class="application-question" placeholder="Paste your resume...">
 
-<p>Your resume:</p>
-<input id="resume" class="application-question" placeholder="Paste your resume...">
+            <p>Any observations?</p>
+            <input id="obs" class="application-question" placeholder="Observations">
 
-<p>Any observations?</p>
-<input id="obs" class="application-question" placeholder="Observations">
+            <button onclick="submitApplication()" class="applyButton">Submit</button>
 
-<button onclick="submitApplication()" class="application-question">Submit</button>
+        </div>
+    </section>
 
-</div>
-</section>
+    <section id="merchPage" class="page">
+        <div class="top-card">
+            <img src="Images/Dandy_Plush_Merch.png">
+        </div>
+    </section>
 
-<script src="Script.js"></script>
+    <script src="Script.js"></script>
 </body>
+
 </html>

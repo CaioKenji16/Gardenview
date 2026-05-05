@@ -8,13 +8,11 @@ function submitApplication() {
     const email = document.getElementById("email").value.trim();
     const resume = document.getElementById("resume").value.trim();
 
-    // ❌ Campos obrigatórios
     if (name === "" || email === "") {
         alert("You must fill all the obligatory fields.");
         return;
     }
 
-    // 👁️ Easter egg específico
     if (
         name.toLowerCase() === "dyle timesly" &&
         email.toLowerCase() === "timesly.dyle@gardenview.com"
@@ -24,7 +22,6 @@ function submitApplication() {
         return;
     }
 
-    // ✅ Resposta normal
     alert("Thank you for applying to work with us! Our team will carefully review your resumé and respond with news soon!");
 }
 
@@ -53,7 +50,7 @@ let lastAngle = 0;
 let currentRotation = 0;
 
 valve.addEventListener("mousedown", (e) => {
-    e.preventDefault(); // 👈 MUITO importante
+    e.preventDefault();
     isDragging = true;
     valve.style.cursor = "grabbing";
 
