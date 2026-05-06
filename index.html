@@ -10,8 +10,9 @@
 
 <body>
 
+        <a onclick="" id="calendar" class="calendar"><img src="Images/Calendar.png" width="100px"></a>
     <header>
-        <img src="Images/Gardenview_Sign.webp" class="imagem-topo">
+        <img src="Images/Gardenview_Sign.png" class="imagem-topo">
     </header>
 
     <nav>
@@ -69,7 +70,7 @@
 
         <div class="side-container right-ad">
          <a onclick="showPage('merchPage')" class="ad" id="ad5"><img src="Images/Vee_Pin.png" width="325px">
-                <h2 class="rainbow-text">Bring the Toons anywhere with you!</h2>
+                <h2 class="rainbow-text">Bring the Toons everywhere you go!</h2>
                 <p>With enamel pins that make every outfit shine!</p>
             </a>
             <a onclick="showPage('merchPage')" class="ad" id="ad6"><img src="Images/Sprout_Acrylic_Standee.png" width="325px">
@@ -88,6 +89,7 @@
 
         <div class="top-card">
             <div class="centralizado">
+                
                 <img src="Images/Game_Logo.webp" width="500px">
                 <h2 class="rainbow-text">Welcome to the unofficial Gardenview website!</h2>
                 <p>Gardenview Educational Center and Museum is a place where learning meets imagination. Explore
@@ -139,87 +141,104 @@
     <section id="toonsPage" class="page">
 
         <audio id="trainWhistle" src="Audios/Train_Whistle.mp3"></audio>
-        <div class="dandy-card" id="dandyCard">
-            <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/0/07/Dandy_Full_Artwork.png/revision/latest?cb=20250816222419"
-                width="200px">
-            <button onclick="revealDyle()" class="timesUp" id="dyleButton"><img src="Images/TIMES_UP_Icon.webp"
-                    width="100px"></button>
+        <div class="dandy-card dandy-glitter" id="dandyCard">
+            <button onclick="revealDyle()" class="timesUp" id="dyleButton"><img src="Images/TIMES_UP_Icon.webp" width="70px"></button>
             <div class="alinhado">
-                <img src="Images/Dandy_Logo.webp" width="50px" height="50px">
-                <h2><span class="rainbow-text">Dandicus Dancifer</span></h2>
+                <img src="Images/Dancifer.png" width="150px">
+                <div class="justificado">
+                    <div class="alinhado">
+                        <img src="Images/Dandicus_Logo.png" width="50px">
+                        <h2><span class="rainbow-text">Dandicus Dancifer</span></h2>
+                    </div>
+                    <p>The star of the show! Dandy is one lovely Toon who always enjoys hours of endless fun!</p>
+                </div>
             </div>
-            <p>The star of the show! Dandy is one lovely Toon who always enjoys hours of endless fun!</p>
         </div>
 
         <audio id="clairDeLune" src="Audios/Clair_de_Lune.mp3"></audio>
-        <div class="dyle-card" id="dyleCard">
-            <img src="Images/Timesly.png" width="150px">
-            <button onclick="hideDyle()" class="timesOver"><img src="Images/Dandy_Logo.webp" width="100px"></button>
+        <div class="dyle-card brilhoso" id="dyleCard">
+            <button onclick="hideDyle()" class="timesOver"><img src="Images/Dandy_Logo.png" width="70px"></button>
             <div class="alinhado">
-                <img src="https://static.wikitide.net/dandysworldwiki/a/a4/Train_Whistle.webp" width="50px"
-                    height="50px">
-                <h2 class="rainbow-text">Dyle Timesly</h2>
+                <img src="Images/Timesly.png" width="150px">
+                <div class="justificado">
+                    <div class="alinhado">
+                        <img src="Images/Train_Whistle.png" width="50px">
+                        <h2 class="rainbow-text">Dyle Timesly</h2>
+                    </div>
+                    <p>The operator assistant of Dandy's World. Dyle's responsible for conducting the trains that lead in
+                        and out of Gardenview!</p>
+                </div>
             </div>
-            <p>The operator assistant of Dandy's World. Dyle's responsible for conducting the trains that lead in
-                and out of Gardenview!</p>
         </div>
 
-        <div class="astro-card">
-            <img src="https://static.wikia.nocookie.net/p__/images/5/59/Astro_Novalite.png/revision/latest?cb=20250219014115&path-prefix=protagonist"
-                width="175px">
+        <div class="astro-card brilhoso">
             <div class="alinhado">
-                <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/b/b3/Astro_Logo.png/revision/latest?cb=20251201211506"
-                    width="50px" height="60px">
-                <h2 class="astro-name">Astro Novalite</h2>
+                <img src="Images/Astro_Novalite.png" width="150px">
+                <div class="justificado">
+                    <div class="alinhado">
+                        <img src="Images/Astro_Logo.png" width="50px">
+                        <h2 class="astro-name">Astro Novalite</h2>
+                    </div>
+                    <p>Dandy's best friend, Astro is one shy Toon! With the power to give people sweet dreams, Astro may not
+                    be the most sociable, but get to know him and you'll make a friend for life.</p>
+                </div>
             </div>
-            <p>Dandy's best friend, Astro is one shy Toon! With the power to give people sweet dreams, Astro may not
-                be the most sociable, but get to know him and you'll make a friend for life.</p>
         </div>
 
-        <div class="card">
-            <img src="https://static.wikia.nocookie.net/neutral-characters/images/0/07/Pebble.webp/revision/latest?cb=20251025170313"
-                width="150px">
+        <div class="card brilhoso">
             <div class="alinhado">
-                <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/9/9d/Bone_Trinket.png/revision/latest?cb=20240803025701"
-                    width="50px" height="50px">
-                <h2>Pebble Dancifer Jr.</h2>
+                <img src="Images/Pebble.png" width="150px">
+                <div class="justificado">
+                    <div class="alinhado">
+                        <img src="Images/Bone.png" width="50px">
+                        <h2>Pebble Dancifer Jr.</h2>
+                    </div>
+                    <p>Dandy's loyal pet rock, Pebble is the most adorable Toon! Playful and joyous, this cute little fella
+                        will remain by your side no matter what.</p>
+                </div>
             </div>
-            <p>Dandy's loyal pet rock, Pebble is the most adorable Toon! Playful and joyous, this cute little fella
-                will remain by your side no matter what.</p>
         </div>
 
-        <div class="sprout-card">
-            <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/5/5d/Sprout_Full_Icon.png/revision/latest/scale-to-width/360?cb=20240827004146"
-                width="150px">
+        <div class="sprout-card brilhoso">
             <div class="alinhado">
-                <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/a/a2/Sprout_Logo.png/revision/latest?cb=20250214060112"
-                    width="37.5px" height="50px">
-                <h2 class="sprout-name">Sprout Seedly</h2>
+                <img src="Images/Sprout.png"
+                    width="150px">
+                <div class="justificado">
+                    <div class="alinhado">
+                        <img src="Images/Sprout_Logo.png" width="37.5px">
+                        <h2 class="sprout-name">Sprout Seedly</h2>
+                    </div>
+                    <p>Sprout is one caring Toon! Often seen with his best friend Cosmo, Sprout always spreads kindness and
+                        joy with his delicious delicacies.</p>
+                </div>
             </div>
-            <p>Sprout is one caring Toon! Often seen with his best friend Cosmo, Sprout always spreads kindness and
-                joy with his delicious delicacies.</p>
         </div>
 
-        <div class="vee-card">
-            <img src="https://static.wikia.nocookie.net/p__/images/3/31/VeeFullIcon.png/revision/latest?cb=20260316145427&path-prefix=protagonist"
-                width="150px">
+        <div class="vee-card brilhoso">
             <div class="alinhado">
-                <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/1/16/Vee_Logo.png/revision/latest/scale-to-width-down/250?cb=20260123171248"
-                    width="50px" height="50px">
-                <h2 class="vee-name">Vee Version 1</h2>
+                <img src="Images/Vee.png"
+                    width="150px">
+                <div class="justificado">
+                    <div class="alinhado">
+                        <img src="Images/Vee_Logo.png" width="50px">
+                        <h2 class="vee-name">Vee Version 1</h2>
+                    </div>
+                    <p>Vee is one smart Toon! She has her own gameshow where you can win lots of prizes!</p>
+                </div>
             </div>
-            <p>Vee is one smart Toon! She has her own gameshow where you can win lots of prizes!</p>
         </div>
 
-        <div class="shelly-card">
-            <img src="https://static.wikia.nocookie.net/p__/images/b/b2/Shelly_Fossilian.png/revision/latest?cb=20260207034951&path-prefix=protagonist"
-                width="175px">
+        <div class="shelly-card brilhoso">
             <div class="alinhado">
-                <img src="https://static.wikia.nocookie.net/dandys-world-robloxhorror/images/5/51/Shelly_Logo.png/revision/latest?cb=20250803075054"
-                    width="60px" height="50px">
-                <h2 class="shelly-name">Shelly Fossilian</h2>
+                <img src="Images/Shelly_Fossilian.png" width="150px">
+                <div class="justificado">
+                    <div class="alinhado">
+                        <img src="Images/Shelly_Logo.png" width="60px">
+                        <h2 class="shelly-name">Shelly Fossilian</h2>
+                    </div>
+                    <p>Shelly is one exciting Toon! She could tell you facts about dinosaurs and fossils for hours!</p>
+                </div>
             </div>
-            <p>Shelly is one exciting Toon! She could tell you facts about dinosaurs and fossils for hours!</p>
         </div>
         
         <img src="Images/Valve.png" id="valve">

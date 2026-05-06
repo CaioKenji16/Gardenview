@@ -19,7 +19,7 @@ body {
         linear-gradient(to Right, #b8f5b1, #abe7ff);
     background-attachment: fixed;
     font-family: 'MyCustomFont', sans-serif;
-    cursor: url(Images/Bone.png), pointer;
+    cursor: url(Images/Bone_Trinket.png), default;
 }
 
 h1, h2, h3, p {
@@ -32,80 +32,6 @@ h1, h2, h3, p {
        url('ITC Kabel Bold.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
-
-@media (max-width: 768px) {
-    header {
-        background:
-            linear-gradient(45deg,
-                rgba(255, 255, 255, 0.4) 25%,
-                transparent 25%,
-                transparent 75%,
-                rgba(255, 255, 255, 0.4) 75%) 0 0 / 90px 90px,
-
-            linear-gradient(45deg,
-                rgba(255, 255, 255, 0.4) 25%,
-                transparent 25%,
-                transparent 75%,
-                rgba(255, 255, 255, 0.4) 75%) 45px 45px / 90px 90px,
-            linear-gradient(to Right, #21ac3b, #87ff9d);
-        padding: 20px;
-        text-align: center;
-        color: white;
-        font-size: 2em;
-        position: fixed;
-        min-width: 100%;
-        z-index: 20;
-    }
-
-    nav {
-        background: #ffd966;
-        height: 41px;
-        text-align: center;
-        position: fixed;
-        min-width: 100%;
-        top: 178px;
-        z-index: 20;
-        border: 3px solid #d89400;
-        font-size: 1.2em;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    nav a {
-        margin: 0 15px;
-        cursor: pointer;
-        font-weight: bold;
-        z-index: 20;
-        transition: all 0.2s ease;
-        color: rgb(0, 0, 0)
-    }
-
-    .top-card {
-        background:
-            repeating-linear-gradient(45deg,
-                transparent,
-                transparent 20px,
-                rgba(255, 255, 255, 0.1) 20px,
-                rgba(255, 255, 255, 0.1) 40px),
-            linear-gradient(to Bottom, #858585, #383838);
-        color: white;
-        border-radius: 30px;
-        padding: 20px;
-        margin: 20px auto;
-        max-width: 1000px;
-        -webkit-text-stroke-width: 1.25px;
-        -webkit-text-stroke-color: rgb(0, 0, 0);
-        font-size: 30px;
-        margin-top: 435px;
-        border: 3px solid rgb(0, 0, 0);
-    }
-
-    .imagem-topo {
-        width: 400px;
-    }
 }
 
 header {
@@ -126,7 +52,7 @@ header {
             rgba(255,255,255,0.4) 75%
         ) 45px 45px / 90px 90px,
         linear-gradient(to Right, #21ac3b, #87ff9d);
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     color: white;
     font-size: 2em;
@@ -135,13 +61,32 @@ header {
     z-index: 20;
 }
 
+.calendar {
+    position: fixed;
+    top: 93px;
+    right: 15px;
+    z-index: 25;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.calendar:hover {
+    transform: scale(1.2);
+    filter: brightness(1.1);
+}
+
+.calendar:active {
+    transform: scale(0.9);
+    filter: brightness(0.9);
+}
+
 nav {
     background: #ffd966;
     height: 41px;
     text-align: center;
     position: fixed;
     min-width: 100%;
-    top:178px;
+    top:196px;
     z-index: 20;
     border: 3px solid #d89400;
     font-size: 1.2em;
@@ -161,7 +106,7 @@ nav a {
 }
 
 .imagem-topo {
-    width:200px;
+    width:250px;
 }
 
 #careers:hover, #toons:hover, #home:hover, #merch:hover{
@@ -423,7 +368,7 @@ section {
     border: 3px solid rgb(0, 0, 0);
 }
 
-.sprout-name { color:rgb(182, 0, 0) }
+.sprout-name { color:rgb(255, 123, 134) }
 
 .application-card{
     background:
@@ -466,13 +411,22 @@ section {
 }
 
 .applyButton {
-    background:linear-gradient(to Bottom, #8a8a8a, #3b3b3b);
+    background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 20px,
+      rgba(255, 255, 255, 0.1) 20px,
+      rgba(255, 255, 255, 0.1) 40px
+    ),
+    linear-gradient(to Bottom, #afafaf, #5f5f5f);
     padding: 15px;
-    font-size:30px;
+    font-size:35px;
     color: white;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 30px;
     transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .applyButton:hover{
@@ -538,6 +492,11 @@ section {
     justify-content: center;
 }
 
+.justificado {
+    display:flex;
+    flex-direction: column;
+}
+
 .arredondado {
     border-radius: 30px;
     border: 3px solid rgb(0, 0, 0);
@@ -546,6 +505,34 @@ section {
 .riscado {
     text-decoration: line-through;
     color: black;
+}
+
+.dandy-glitter {
+    transition: all 0.2s ease;
+}
+
+.dandy-glitter:hover {
+    transform: scale(1.02);
+    filter:brightness(1.05);
+}
+
+.dandy-glitter:active {
+    transform: scale(0.98);
+    filter:brightness(0.85);
+}
+
+.brilhoso {
+    transition: all 0.2s ease;
+}
+
+.brilhoso:hover {
+    transform:scale(1.02);
+    filter:brightness(1.1);
+}
+
+.brilhoso:active {
+    transform:scale(0.98);
+    filter:brightness(0.9);
 }
 
 html {
@@ -598,6 +585,7 @@ html {
     overflow: hidden;
     transition: all 0.2s ease;
     position: relative;
+    cursor: pointer;
 }
 
 .ad:hover{
