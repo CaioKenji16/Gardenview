@@ -388,11 +388,11 @@ section {
 }
 
 .applyButton {
-    background:linear-gradient(to Bottom, #858585, #383838);
+    background:linear-gradient(to Bottom, #8a8a8a, #3b3b3b);
     padding: 15px;
     font-size:30px;
     color: white;
-    border: 3px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 30px;
     transition: all 0.2s ease;
 }
@@ -465,6 +465,11 @@ section {
     border: 3px solid rgb(0, 0, 0);
 }
 
+.riscado {
+    text-decoration: line-through;
+    color: black;
+}
+
 html {
     scrollbar-gutter: stable;
 }
@@ -480,10 +485,10 @@ html {
 
 .side-container {
     position: absolute;
-    top: 235px;
+    margin-top: 235px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .left-ad {
@@ -508,7 +513,7 @@ html {
     border-radius: 20px;
     font-size:21px;
     color:white;
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
     max-width: 325px;
     text-align: center;
@@ -527,8 +532,37 @@ html {
     filter: brightness(0.9);
 }
 
-.ad.active {
-    opacity: 1;
-    pointer-events: auto;
+.dyleAd {
+    background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 20px,
+      rgba(0, 0, 0, 0.1) 20px,
+      rgba(0, 0, 0, 0.1) 40px
+    ),
+    linear-gradient(to Bottom, rgba(25, 26, 88, 1), rgba(25, 26, 88, 0)),
+    linear-gradient(to Right, rgb(204, 103, 103), rgb(189, 139, 82), #bbb262, rgb(85, 180, 85), #5698be, rgb(79, 105, 190), rgb(151, 80, 179));
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    font-size:21px;
+    color:white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    max-width: 325px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    display: none;
     position: relative;
+}
+
+.dyleAd:hover{
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.dyleAd:active {
+    transform: scale(0.95);
+    filter: brightness(0.9);
 }

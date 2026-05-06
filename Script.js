@@ -6,7 +6,6 @@ function showPage(pageId) {
 function submitApplication() {
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
-    const resume = document.getElementById("resume").value.trim();
 
     if (name === "" || email === "") {
         alert("You must fill all the obligatory fields.");
@@ -27,6 +26,15 @@ function submitApplication() {
 
 function revealTimesUp() {
     document.getElementById("dyleButton").style.display = "block"
+    document.getElementById("dyleAd1").style.display = "block"
+    document.getElementById("ad1").style.display = "none"
+    document.getElementById("ad2").style.display = "none"
+    document.getElementById("ad3").style.display = "none"
+    document.getElementById("ad4").style.display = "none"
+    document.getElementById("ad5").style.display = "none"
+    document.getElementById("ad6").style.display = "none"
+    document.getElementById("ad7").style.display = "none"
+    document.getElementById("ad8").style.display = "none"
 }
 
 function revealDyle() {
@@ -69,7 +77,6 @@ document.addEventListener("mouseup", () => {
     valve.style.cursor = "grab";
 });
 
-// 🔥 segurança extra (resolve 99% dos bugs)
 window.addEventListener("blur", () => {
     isDragging = false;
 });
