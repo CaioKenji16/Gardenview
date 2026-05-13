@@ -535,6 +535,20 @@ section {
     filter:brightness(0.9);
 }
 
+.glow {
+    transition: all 0.2s ease;
+}
+
+.glow:hover {
+    transform:scale(1.1);
+    filter:brightness(1.05);
+}
+
+.glow:active {
+    transform:scale(0.9);
+    filter:brightness(0.95);
+}
+
 html {
     scrollbar-gutter: stable;
 }
