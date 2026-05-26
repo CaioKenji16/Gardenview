@@ -22,6 +22,10 @@ body {
     cursor: url(Images/Bone_Trinket.png), default;
 }
 
+a, button, input, textarea, select {
+  -webkit-tap-highlight-color: transparent;
+}
+
 h1, h2, h3, p {
     margin: 5px 0;
 }
@@ -32,6 +36,12 @@ h1, h2, h3, p {
        url('ITC Kabel Bold.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .ad{
+        display: none;
+    }
 }
 
 header {
@@ -445,8 +455,11 @@ section {
 #homePage { display: block; }
 
 .warning {
-    color: rgb(197, 0, 0);
-    font-weight: bold;
+    background: linear-gradient(rgb(255, 0, 0), rgb(121, 0, 0));
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .rainbow-text {
@@ -540,8 +553,8 @@ section {
 }
 
 .glow:hover {
-    transform:scale(1.1);
-    filter:brightness(1.05);
+    transform:scale(1.05);
+    filter:brightness(1.1);
 }
 
 .glow:active {

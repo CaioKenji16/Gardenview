@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gardenview Educational Center</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="icon" href="Images/Dandy_Logo.webp" type="image/x-icon">
@@ -26,25 +27,6 @@
     <section id="homePage" class="page">
 
         <!-- ANÚNCIOS -->
-        <!--div class="side-container left-ad" id="adLeft">
-            <a onclick="showPage('merchPage')" class="ad"><img src="Images/Dandy_Plush_Merch.png" width="325px">
-                <h2 class="rainbow-text">Ever wanted your very own Dandy plush?</h2>
-                <p>Get one for just $32!</p>
-            </a>
-            <a onclick="showPage('merchPage')" class="ad"><img src="Images/Dandy_and_Mains_Shirt.webp" width="325px">
-                <h2 class="rainbow-text">Spice up your looks!</h2>
-                <p>With official Gardenview merch!</p>
-            </a>
-            <a onclick="showPage('merchPage')" class="ad"><img src="Images/Plant_Kindness_Poster.png" width="325px">
-                <h2 class="rainbow-text">Exclusive posters!</h2>
-                <p>Only in Dandy's World's official merch store!</p>
-            </a>
-            <a onclick="showPage('merchPage')" class="ad"><img src="Images/Dandy_Acrylic_Standee.png" width="325px">
-                <h2 class="rainbow-text">Dandy's World statues!</h2>
-                <p>Your favorite characters, now in high-quality acrylic standees!</p>
-            </a>
-        </div-->
-        <!-- FIM DOS ANÚNCIOS -->
          <div class="side-container left-ad">
          <a onclick="showPage('merchPage')" class="ad" id="ad1"><img src="Images/Dandy_Plush_Merch.png" width="325px">
                 <h2 class="rainbow-text">Ever wanted your very own Dandy plush?</h2>
@@ -86,23 +68,23 @@
                 <p>Get one for just $32!</p>
             </a>
         </div>
+        <!-- FIM DOS ANÚNCIOS -->
 
-        <div class="top-card">
+        <div class="top-card brilhoso">
             <div class="centralizado">
-                
                 <a href="https://www.roblox.com/pt/games/16116270224/Dandy-s-World" target="_blank"><img src="Images/Game_Logo.webp" width="500px" class="glow"></a>
                 <h2 class="rainbow-text">Welcome to the unofficial Gardenview website!</h2>
                 <p>Gardenview Educational Center and Museum is a place where learning meets imagination. Explore
                     interactive exhibits, meet our beloved Toons, and discover a world of creativity, science,
                     and fun for all ages!</p>
-                <img src="Images/BlushCrunch.png" width="100px" height="100px" class="arredondado">
+                <img src="Images/BlushCrunch.png" width="100px" height="100px" class="arredondado glow">
                 <h2 class="pink-text">Disclaimer!</h2>
                 <p>Dandy's World and all affiliated content belongs to BlushCrunch Studios and all credits are
                     due to the respective owners.</p>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card brilhoso">
             <h2 class="rainbow-text">Our Founders</h2>
             <p>Gardenview was brought to life by two brilliant minds who believed in the power of imagination and joy.
             </p>
@@ -110,20 +92,20 @@
             <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
 
                 <div style="text-align:center;">
-                    <img src="Images/Delilah_Keen.webp" width="200" class="arredondado">
+                    <img src="Images/Delilah_Keen.webp" width="200" class="arredondado glow">
                     <p><b class="rainbow-text">Delilah Keen</b><br>A visionary creator who helped bring happiness to
                         children everywhere, giving life to their beloved Toon friends!</p>
                 </div>
 
                 <div style="text-align:center;">
-                    <img src="Images/Arthur_Walton.webp" width="200" class="arredondado">
+                    <img src="Images/Arthur_Walton.webp" width="200" class="arredondado glow">
                     <p><b class="rainbow-text">Arthur Walton</b><br>A brilliant innovator who turned dreams into
                         reality, helping create the magical world of Gardenview and its wonderful Toons!</p>
                 </div>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card brilhoso">
             <h2 class="rainbow-text">Gardenview's Rules</h2>
             <p class="warning">- Don't throw things at Toons;</p>
             <p class="warning">- No photography around Astro;</p>
@@ -247,11 +229,11 @@
 
     <!-- JOBS -->
     <section id="jobsPage" class="page">
-        <div class="top-card">
+        <div class="top-card brilhoso">
             <h3 class="rainbow-text">Work at Gardenview!</h3>
             <p>Join our team and help create magical experiences in Gardenview Educational Center and Museum!</p>
         </div>
-        <div class="card">
+        <div class="card brilhoso">
             <h3 class="rainbow-text">Toon Handler</h3>
             <p>Join our crew of amazing Toon Handlers and help care for our beloved stars, the Toons!</p>
             <button onclick="showPage('applyPage')" class="applyButton">Apply Now</button>
@@ -260,14 +242,14 @@
 
     <!-- APPLY -->
     <section id="applyPage" class="page">
-        <div class="top-card">
+        <div class="top-card brilhoso">
 
-            <h2 class="outlined-rainbow">Application Form</h2>
-
-            <p>Full name:</p>
+            <h2 class="outlined-rainbow">Application Form - Toon Handler</h2>
+            <p class="warning">Items with an asterisk (*) MUST be filled.</p>
+            <p><span class="warning">*</span>Full name:</p>
             <input id="name" class="application-question" placeholder="Full Name">
 
-            <p>Your email:</p>
+            <p><span class="warning">*</span>Your email:</p>
             <input id="email" class="application-question" placeholder="Email">
 
             <p>Your resume:</p>
@@ -282,7 +264,7 @@
     </section>
 
     <section id="merchPage" class="page">
-        <div class="top-card">
+        <div class="top-card brilhoso">
             <img src="Images/Dandy_Plush_Merch.png">
         </div>
     </section>
