@@ -19,7 +19,7 @@ body {
         linear-gradient(to Right, #b8f5b1, #abe7ff);
     background-attachment: fixed;
     font-family: 'MyCustomFont', sans-serif;
-    cursor: url(Images/Bone_Trinket.png), default;
+    cursor: url(../assets/images/Bone_Trinket.png), default;
 }
 
 a, button, input, textarea, select {
@@ -32,8 +32,8 @@ h1, h2, h3, p {
 
 @font-face {
   font-family: 'MyCustomFont';
-  src: url('ITC Kabel Bold.otf') format('otf'),
-       url('ITC Kabel Bold.otf') format('truetype');
+  src: url('../assets/fonts/ITC Kabel Bold.otf') format('otf'),
+       url('../assets/fonts/ITC Kabel Bold.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
